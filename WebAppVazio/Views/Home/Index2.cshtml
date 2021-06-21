@@ -1,0 +1,17 @@
+﻿@model List<WebAppVazio.Models.Produto>;
+
+<h2>Index 2</h2>
+
+<table>
+    <tr>
+        <td>ID</td>
+        <td>Produto</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Nome</td>
+        </tr>
+    }
+</table>
